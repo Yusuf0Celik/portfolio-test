@@ -1,0 +1,140 @@
+/* General */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
+body {
+  background-color: #141414;
+  color: white;
+}
+
+main {
+  height: 1000px;
+}
+
+/* Navbar */
+
+.navbar-div {
+  position: sticky;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(1rem);
+  padding: 1rem 3rem;
+  user-select: none;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.25rem;
+}
+
+.navbar .navbar-logo-link {
+  font-size: 1.5rem;
+}
+
+.navbar-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-link {
+  padding: 0 10px;
+}
+
+/* Frontpage */
+
+.background-image {
+  background-image: url(/img/Background.png);
+  background-position: center;
+  background-clip: border-box;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+}
+
+.frontpage-quote {
+  height: 6.25rem;
+  margin: 15% 30%;
+  text-align: center;
+  font-size: 3rem;
+  cursor: default;
+  user-select: none;
+  transition: 200ms;
+}
+
+.frontpage-quote:hover {
+  font-size: 3.25rem;
+}
+
+.arrow-scroll {
+  display: flex;
+  justify-content: end;
+  margin-top: 26.5rem;
+  padding-right: 0.5rem;
+  font-size: 3rem;
+  animation: arrow 2s ease-in-out infinite;
+}
+
+.arrow-scroll a {
+  color: white;
+}
+
+@keyframes arrow {
+  0% {
+    transform: translate(0);
+  }
+  50% {
+    transform: translate(0, 15px);
+  }
+  100% {
+    transform: translate(0);
+  }
+
+}
+
+/* About me */
+
+.aboutme-title {
+  margin-top: 100px;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.aboutme-info {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.aboutme-text {
+  width: 400px;
+  margin: 0 70px;
+}
+
+.aboutme-image {
+  width: 425px;
+  height: 400px;
+  margin: 0 100px;
+  overflow: hidden;
+}
+
+.aboutme-image img {
+  transform: translate(-150px, -150px);
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+  display: none;
+}
